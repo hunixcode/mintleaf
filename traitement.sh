@@ -16,6 +16,10 @@ echo "║   TRAITEMENT DE RETOUR - NETTOYAGE  ║"
 echo "╚══════════════════════════════════════╝"
 echo ""
 
+# 0. mise à jour
+
+apt update && apt upgrade -y
+
 # 1. Vérification des applications et de l'horloge
 echo "[1/4] Vérification des applications et de l'horloge..."
 bash "$SCRIPT_DIR/Utils/verification_app.sh"
